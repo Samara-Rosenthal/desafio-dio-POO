@@ -1,4 +1,4 @@
-# Desafio-dio-POO
+# Desafio DIO POO
 
 #Aprendendo na Prática Programação Orientada a Objetos
 
