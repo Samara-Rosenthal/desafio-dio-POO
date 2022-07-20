@@ -4,7 +4,7 @@ import java.util.*;
 
 public class Dev {
      private String nome;
-     private Set<Conteudo> conteudoInscricao = new LinkedHashSet<>();
+     private Set<Conteudo> conteudosInscritos = new LinkedHashSet<>();
      private Set<Conteudo> conteudosConcluidos = new LinkedHashSet<>();
 
      public void inscresverBootcamp(Bootcamp bootcamp){
@@ -38,11 +38,11 @@ public class Dev {
     }
 
     public Set<Conteudo> getConteudoInscricao() {
-        return conteudoInscricao;
+        return conteudosInscritos;
     }
 
     public void setConteudoInscricao(Set<Conteudo> conteudoInscricao) {
-        this.conteudoInscricao = conteudoInscricao;
+        this.conteudosInscritos = conteudoInscricao;
     }
 
     public Set<Conteudo> getConteudosConcluidos() {
@@ -58,11 +58,11 @@ public class Dev {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Dev dev = (Dev) o;
-        return Objects.equals(nome, dev.nome) && Objects.equals(conteudoInscricao, dev.conteudoInscricao) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
+        return Objects.equals(nome, dev.nome) && Objects.equals(conteudosInscritos, dev.conteudosInscritos) && Objects.equals(conteudosConcluidos, dev.conteudosConcluidos);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, conteudoInscricao, conteudosConcluidos);
+        return Objects.hash(nome, conteudosInscritos, conteudosConcluidos);
     }
 }
